@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #F7F4EE;
+    color: #1C1917;
+    font-family: 'Inter', system-ui, sans-serif;
+    /* Subtle dot grid texture */
+    background-image: radial-gradient(circle, rgba(28, 25, 23, 0.055) 1px, transparent 1px);
+    background-size: 28px 28px;
+  }
+}
