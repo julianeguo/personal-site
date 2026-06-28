@@ -18,7 +18,7 @@ export default {
       fontFamily: {
         serif: ['"Instrument Serif"', 'Georgia', 'serif'],
         sans:  ['Inter', 'system-ui', 'sans-serif'],
-        handwritten: ['"Caveat"', 'cursive'],
+        handwritten: ['"Rock Salt"', 'cursive'],
       },
     },
   },

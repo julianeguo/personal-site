@@ -45,12 +45,12 @@ export const projects = [
 export const research = [
   {
     id: 'r01',
-    name: 'HAND ERC: Robotic Hand Manipulation',
+    name: 'Safe In-Hand Rotation with Constrained Policy Optimization',
     tagline: 'Teaching a robot hand to manipulate objects with RL.',
-    description: 'Using Reinforcement Learning to implement CPO RL to train a LEAP robot hand to perform object manipulation. Currently ongoing research.',
-    image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&h=450&fit=crop&q=80',
+    description: 'Comparing Constrained Policy Optimization (CPO) against a PPO baseline for safe in-hand cube rotation on a simulated LEAP robotic hand in MuJoCo. CPO enforces hard safety constraints via Lagrangian relaxation, trading rotation speed for lower torque and drop risk. Independent study (CS 399) at the HAND ERC lab mentored by Professor Kevin Lynch and graduate student Yifei Chen.',
+    image: '/hand.png',
     tags: ['PyTorch', 'Python', 'Reinforcement Learning', 'mjlab', 'Google Colab', 'Robotics'],
-    repo: null,
+    repo: 'https://github.com/julianeguo/safe-hand-rotation',
     live: null,
   },
   {
@@ -58,15 +58,9 @@ export const research = [
     name: 'ExoDiscovery-Benchmark',
     tagline: 'Can LLMs judge exoplanet habitability from raw data?',
     description: 'LLM benchmark evaluating whether language models can reason exoplanet habitability from raw NASA data. Tested Qwen3-8B and Gemini 2.5 Flash. Found smaller models struggle with boundary cases, and both models are swayed by out-of-range values. Part of Prof. Manling Li’s CS396 course.',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=450&fit=crop&q=80',
+    image: '/phl.png',
     tags: ['Python', 'LLM Evaluation', 'Prompt Engineering', 'HuggingFace', 'Google Colab', 'LaTeX'],
     repo: 'https://github.com/julianeguo/exodiscovery-benchmark',
     live: null,
   },
-]
-
-export const moreProjects = [
-  { name: 'Placeholder Project A', repo: 'https://github.com' },
-  { name: 'Placeholder Project B', repo: 'https://github.com' },
-  { name: 'Placeholder Project C', repo: 'https://github.com' },
 ]

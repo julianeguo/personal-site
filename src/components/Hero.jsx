@@ -18,7 +18,7 @@ export default function Hero() {
 
           <p className="font-sans text-lg md:text-xl text-muted max-w-md leading-relaxed">
             Hey! I'm a software engineer who believes technology should be delightful.
-            I build at the intersection of robotics, AI, and human-centered design.
+            I enjoy building AI/ML-powered full-stack software.
           </p>
 
           <div className="flex items-center gap-4 mt-10 text-[1.5rem] font-serif italic">

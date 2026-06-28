@@ -26,7 +26,7 @@ function TapeCard({ src, caption, tapeRotate = '-2deg', className = '' }) {
         }}
       />
       <img src={src} alt={caption} className="block object-cover" style={{ width: 'clamp(135px, 38vw, 190px)', aspectRatio: '190 / 270' }} />
-      <p className="text-center mt-2 font-handwritten text-muted whitespace-pre-line" style={{ fontSize: '1.25rem' }}>
+      <p className="text-center mt-2 font-handwritten text-muted whitespace-pre-line" style={{ fontSize: '0.85rem' }}>
         {caption}
       </p>
     </div>
@@ -56,7 +56,7 @@ export default function About() {
           </p>
 
           <p className="text-muted text-lg leading-relaxed mb-5">
-            <strong>Hey! 你好!</strong> I'm Juliane, a software engineer and creative. Born and raised in Beijing, moved to Ontario,
+            <strong>Hey! 你好 :-) !</strong> I'm Juliane, a software engineer and creative. Born and raised in Beijing, moved to Ontario,
             now majoring in Computer Science & pursuing a Segal Design Certificate at Northwestern University.
           </p>
 
@@ -67,13 +67,12 @@ export default function About() {
           </p>
 
           <p className="text-muted text-lg leading-relaxed mb-5">
-            Right now I'm doing RL research at <a href="https://hand-erc.org/" target="_blank" rel="noopener noreferrer" className="text-yellow-400 underline hover:text-yellow-300 transition-colors">HAND ERC</a>, serving as the Vice President of Northwestern's Robotics Club,
-            and heading into an internship at Asahi Kasei Bioprocess America. Previously, I worked on the dashboard for
+            Right now I'm an Automation Engineering Intern at Asahi Kasei Bioprocess America where I build internal software and automation tools. I also serve as the Vice President of Northwestern's Robotics Club. Previously, I did RL research at <a href="https://hand-erc.org/" target="_blank" rel="noopener noreferrer" className="text-yellow-400 underline hover:text-yellow-300 transition-colors">HAND ERC</a>, and worked on the dashboard for
             Northwestern Formula Racing's first functional EV.
           </p>
 
           <p className="text-muted text-lg leading-relaxed mb-5">
-            Always open to chatting about literally anything! Book a meeting with me here [link], or reach me at [email]. :-D
+            Always open to chatting about literally anything! Book a meeting with me <a href="https://calendly.com/julianeguo2028-u" target="_blank" rel="noopener noreferrer" className="text-yellow-400 underline hover:text-yellow-300 transition-colors">here</a>, or reach me at <a href="mailto:julianeguo2028@u.northwestern.edu" className="text-yellow-400 underline hover:text-yellow-300 transition-colors">julianeguo2028@u.northwestern.edu</a> :-D
           </p>
         </div>
 
