@@ -23,7 +23,7 @@ export default function Hero() {
 
           <div className="flex items-center gap-4 mt-10 text-[1.5rem] font-serif italic">
             <a
-              href="https://github.com"
+              href="https://github.com/julianeguo"
               target="_blank"
               rel="noopener noreferrer"
               className="text-ink hover:text-accent-coral transition-colors"
@@ -32,14 +32,14 @@ export default function Hero() {
             </a>
             <span className="text-ink">·</span>
             <a
-              href="mailto:you@example.com"
+              href="mailto:julianeguo2028@u.northwestern.edu"
               className="text-ink hover:text-accent-coral transition-colors"
             >
               Email
             </a>
             <span className="text-ink">·</span>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/juliane-guo/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-ink hover:text-accent-coral transition-colors"
