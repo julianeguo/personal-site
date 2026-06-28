@@ -37,7 +37,11 @@ export default function About() {
   const [ref, inView] = useInView()
 
   return (
-    <section id="about" className="px-6 md:px-14 lg:px-20 pt-20 pb-12">
+    <section id="about" className="px-6 md:px-14 lg:px-20 pt-12 pb-12">
+      <div className="flex items-center gap-4 mb-8">
+        <div className="flex-1 h-px bg-border" />
+      </div>
+
       <div
         ref={ref}
         className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start"
