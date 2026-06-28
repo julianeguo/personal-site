@@ -35,39 +35,57 @@ function Disc() {
 
 export default function VinylRecord({ imageSrc }) {
   return (
-    <div className="relative flex-shrink-0" style={{ width: W, height: H }}>
-      {/* Vinyl disc — behind sleeve */}
+    // Outer box reserves the scaled footprint so layout/centering stays correct.
+    <div
+      className="relative flex-shrink-0"
+      style={{
+        width: `calc(${W}px * var(--vinyl-scale, 1))`,
+        height: `calc(${H}px * var(--vinyl-scale, 1))`,
+      }}
+    >
+      {/* Fixed-size content, scaled as a whole via the CSS variable */}
       <div
-        className="absolute"
+        className="absolute top-0 left-0"
         style={{
-          left: CX - R,
-          top: CY - R,
-          zIndex: 0,
-          filter: 'drop-shadow(8px 6px 18px rgba(0,0,0,0.35))',
+          width: W,
+          height: H,
+          transform: 'scale(var(--vinyl-scale, 1))',
+          transformOrigin: 'top left',
         }}
       >
-        <Disc />
-      </div>
+        {/* Vinyl disc — behind sleeve */}
+        <div
+          className="absolute"
+          style={{
+            left: CX - R,
+            top: CY - R,
+            zIndex: 0,
+            filter: 'drop-shadow(8px 6px 18px rgba(0,0,0,0.35))',
+          }}
+        >
+          <Disc />
+        </div>
 
-      {/* Album sleeve — in front */}
-      <div
-        className="absolute overflow-hidden"
-        style={{
-          left: 0,
-          top: 0,
-          width: SLEEVE,
-          height: SLEEVE,
-          zIndex: 10,
-          borderRadius: 7,
-          boxShadow: '8px 8px 24px rgba(0,0,0,0.18)',
-        }}
-      >
-        <img
-          src={imageSrc}
-          alt="Album cover"
-          className="w-full h-full object-cover"
-          style={{ objectPosition: 'center 22%' }}
-        />
+        {/* Album sleeve — in front */}
+        <div
+          className="absolute overflow-hidden"
+          style={{
+            left: 0,
+            top: 0,
+            width: SLEEVE,
+            height: SLEEVE,
+            zIndex: 10,
+            borderRadius: 7,
+            boxShadow: '8px 8px 24px rgba(0,0,0,0.18)',
+          }}
+        >
+          <img
+            src={imageSrc}
+            alt="Album cover"
+            className="w-full h-full object-cover"
+            style={{ objectPosition: 'center 22%' }}
+          />
+        </div>
       </div>
     </div>
   )

@@ -25,8 +25,8 @@ function TapeCard({ src, caption, tapeRotate = '-2deg', className = '' }) {
           transform: `translateX(-50%) rotate(${tapeRotate})`,
         }}
       />
-      <img src={src} alt={caption} className="block object-cover" style={{ width: '155px', height: '233px' }} />
-      <p className="text-center mt-2 font-handwritten text-muted" style={{ fontSize: '0.9rem' }}>
+      <img src={src} alt={caption} className="block object-cover" style={{ width: 'clamp(135px, 38vw, 190px)', aspectRatio: '190 / 270' }} />
+      <p className="text-center mt-2 font-handwritten text-muted whitespace-pre-line" style={{ fontSize: '1.25rem' }}>
         {caption}
       </p>
     </div>
@@ -77,9 +77,9 @@ export default function About() {
           </p>
         </div>
 
-        <div className="hidden lg:flex flex-row gap-5 flex-shrink-0 items-start pt-16">
+        <div className="flex flex-row flex-wrap justify-center gap-5 flex-shrink-0 items-start w-full lg:w-auto mt-2 lg:mt-0 lg:items-start lg:pt-16">
           <TapeCard src="/cali.png" caption="me in cali" tapeRotate="-3deg" />
-          <TapeCard src="/band.JPG" caption="my band live @ Northwestern" tapeRotate="2deg" className="mt-14" />
+          <TapeCard src="/band.JPG" caption={"my band live\n@ Northwestern"} tapeRotate="2deg" className="lg:mt-14" />
         </div>
       </div>
     </section>

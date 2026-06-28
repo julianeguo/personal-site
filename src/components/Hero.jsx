@@ -49,8 +49,8 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Right: Vinyl record — hidden on small screens */}
-        <div className="hidden lg:block flex-shrink-0">
+        {/* Right: Vinyl record */}
+        <div className="flex justify-center w-full lg:block lg:w-auto flex-shrink-0">
           <VinylRecord imageSrc="/album-cover.png" />
         </div>
 
