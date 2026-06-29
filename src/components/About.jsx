@@ -65,7 +65,7 @@ export default function About() {
           </p>
 
           <p className="text-muted text-lg leading-relaxed mb-5">
-            I have always been drawn to creating things, whether it's art, music, writing, or code. (check out my works here! I'm also the lead singer
+            I have always been drawn to creating things, whether it's art, music, writing, or code. (I'm also the lead singer
             and co-founder of <a href="https://www.instagram.com/aplatypus_band/" target="_blank" rel="noopener noreferrer" className="text-yellow-400 underline hover:text-yellow-300 transition-colors">@aplatypus_band</a>, and I was a classically trained violinist for 12 years.) I looove it when
             creative expression and human-centered thinking meet the rigorous logic of engineering, from music-playing robots to AI-powered software.
           </p>
