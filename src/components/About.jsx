@@ -76,7 +76,7 @@ export default function About() {
           </p>
 
           <p className="text-muted text-lg leading-relaxed mb-5">
-            Always open to chatting about literally anything! Book a meeting with me <a href="https://calendly.com/julianeguo2028-u" target="_blank" rel="noopener noreferrer" className="text-yellow-400 underline hover:text-yellow-300 transition-colors">here</a>, or reach me at <a href="mailto:julianeguo2028@u.northwestern.edu" className="text-yellow-400 underline hover:text-yellow-300 transition-colors">julianeguo2028@u.northwestern.edu</a> :-D
+            Currently looking for Summer 2027 SWE internships! Book a meeting with me <a href="https://calendly.com/julianeguo2028-u" target="_blank" rel="noopener noreferrer" className="text-yellow-400 underline hover:text-yellow-300 transition-colors">here</a>, or reach me at <a href="mailto:julianeguo2028@u.northwestern.edu" className="text-yellow-400 underline hover:text-yellow-300 transition-colors">julianeguo2028@u.northwestern.edu</a> :-D
           </p>
         </div>
 
